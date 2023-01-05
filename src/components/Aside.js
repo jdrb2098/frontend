@@ -7,12 +7,12 @@ import IconoAlmacen from "../assets/ecology-house-svgrepo-com.svg";
 import IconoRecaudo from "../assets/voltmeter-power-svgrepo-com.svg";
 import IconoSeguimientoPlanes from "../assets/networking-share-svgrepo-com.svg";
 import IconoConservacion from "../assets/sprout-tree-svgrepo-com.svg";
-import IconoGestionDocumental from "../assets/recycling-environment-svgrepo-com.svg";
+import IconoGestionDocumental from "../assets/recycling-environment-svgrepo-com.svg"; 
 import IconoTramitesServicios from "../assets/analytics-bar-chart-svgrepo-com.svg";
 import IconoRecursoHidrico from "../assets/h2o-svgrepo-com.svg";
 import IconoAgregarVivero from "../assets/iconosConservacion/add-svgrepo-com.svg";
 import IconoGestorVivero from "../assets/iconosConservacion/leaf-svgrepo-com.svg";
-import IconoEditarVivero from "../assets/iconosConservacion/edit-svgrepo-com.svg";
+import IconoEditarVivero from "../assets/iconosConservacion/edit-svgrepo-com.svg"; 
 import IconoGMaterialVegetal from "../assets/iconosConservacion/sprout-tree-svgrepo-com.svg";
 import IconoProduccion from "../assets/iconosConservacion/ecologic-leaf-svgrepo-com.svg";
 import IconoSolicitudes from "../assets/iconosConservacion/folder-svgrepo-com.svg";
@@ -21,7 +21,11 @@ import IconoCronograma from "../assets/iconosConservacion/calendar-svgrepo-com.s
 import IconoConfiguracion from "../assets/iconosConservacion/settings-svgrepo-com.svg";
 import IconoCentroNotificacion from "../assets/iconosConservacion/paper-plane-svgrepo-com.svg";
 import IconoReportes from "../assets/iconosConservacion/chart-presentation-report-svgrepo-com.svg";
+import IconoDashboard from "../assets/logos/icons/Dashboard.svg";
+import IconoOrden from "../assets/logos/icons/Orden_de_compra.svg";
+import IconoSolped from "../assets/logos/icons/Solped.svg";
 
+  
 const Aside = () => {
   const userInfo = useSelector((state) => state.user.user);
 
@@ -116,7 +120,7 @@ const Aside = () => {
                 aria-expanded="false"
               >
                 {/* <i class="fa-solid fa-money-check"></i> */}
-                <img src={IconoRecaudo} alt="Recaudo" />
+                <img src={IconoDashboard} alt="Dashboard" />
                 <span className="nav-link-text ms-2 ps-1">Dashboard</span>
               </a>
               <div className="collapse " id="pagesExamples">
@@ -146,14 +150,14 @@ const Aside = () => {
                 aria-expanded="false"
               >
                 {/* <i class="fa-solid fa-warehouse"></i> */}
-                <img src={IconoAlmacen} alt="almacen" />
+                <img src={IconoSolped} alt="almacen" />
                 <span className="nav-link-text ms-2 ps-1">Solped</span>
               </a>
               <div className="collapse" id="almacen">
                 <ul className="nav ">
                   <li className="nav-item active">
                     <Link
-                      to="almacen/creacion-articulo"
+                      to="almacen/nueva-solicitud"
                       className="nav-link text-white"
                     >
                       <span className="sidenav-mini-icon"> N </span>
@@ -164,16 +168,16 @@ const Aside = () => {
                     </Link>
                   </li>
                   <li className="nav-item ">
-                    <a
+                    <Link
                       className="nav-link text-white "
-                      href="../../pages/dashboards/discover.html"
+                      to="almacen/historial-solped"
                     >
                       <span className="sidenav-mini-icon"> H </span>
                       <span className="sidenav-normal  ms-2  ps-1">
                         {" "}
                         Historial Pedidos{" "}
                       </span>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item ">
                     <a
@@ -200,7 +204,7 @@ const Aside = () => {
                 aria-expanded="false"
               >
                 {/* <i class="fa-solid fa-magnifying-glass-chart"></i> */}
-                <img src={IconoSeguimientoPlanes} alt="Seguimiento planes" />
+                <img src={IconoOrden} alt="Seguimiento planes" />
                 <span className="nav-link-text ms-2 ps-1">Orden de Compra</span>
               </a>
               <div className="collapse " id="applicationsExamples">

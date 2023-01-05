@@ -1,9 +1,14 @@
 import { Route, Routes } from "react-router-dom";
 import { Navigate } from "react-router-dom/dist";
 
-import Almacen from "../";
-import CreacionArticulo from "../CreacionArticuloScreen";
+import Solped from "../";
+import NuevaSolicitudScreen from "../nuevaSolicitudScreen";
 import ReportesScreen from "../ReportesScreen";
+import HistorialPedidosScreen from "../HistorialPedidosScreen";
+import Almacen from "../";
+import { OrdenCompraScreen } from "../OrdenCompraScreen";
+
+
 
 const AlmacenRoutes = () => {
   return (
@@ -11,9 +16,13 @@ const AlmacenRoutes = () => {
 
       <Route index element={<Almacen />} />
 
-      <Route path="creacion-articulo" element={<CreacionArticulo />} />
+      <Route path="nueva-solicitud" element={<NuevaSolicitudScreen />} />
 
       <Route path="reportes" element={<ReportesScreen />} />
+
+      <Route path="historial-solped" element={<HistorialPedidosScreen />}/>
+
+<Route path="ordenCompra" element={<OrdenCompraScreen/>}/>
 
       <Route path="/*" element={<Navigate to="/dashboard" />} />
 

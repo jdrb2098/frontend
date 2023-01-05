@@ -28,7 +28,7 @@ function App() {
       <Route element={<ProtectedRoutes redirectTo={"/login"}/>}>
         <Route path="/dashboard" element={<HomeScreen />}>
 
-          <Route index element={<LogoScreen />} />
+          <Route index element={<PrincipalScreen />} />
           
 
           <Route path="almacen/*" element={<AlmacenRoutes />} />

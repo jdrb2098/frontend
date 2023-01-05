@@ -4,12 +4,20 @@ import Select from "react-select";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import BGPrincipal from "../assets/logos/icons/Bannerprincipal.png";
-import gridImg1 from "../assets/logos/icons/Ilus-Optimiza.svg"
-import gridImg2 from "../assets/logos/icons/Ilus-Ahorra.svg"
-import gridImg3 from "../assets/logos/icons/Ilus-Compara.svg"
-import gridImg4 from "../assets/logos/icons/Ilus-Agiliza.svg"
-import BGGrid from "../assets/logos/icons/backgrid.png"
- 
+import gridImg1 from "../assets/logos/icons/Ilus-Optimiza.svg";
+import gridImg2 from "../assets/logos/icons/Ilus-Ahorra.svg";
+import gridImg3 from "../assets/logos/icons/Ilus-Compara.svg";
+import gridImg4 from "../assets/logos/icons/Ilus-Agiliza.svg";
+import BGGrid from "../assets/logos/icons/backgrid.png";
+import fondo from "../assets/logos/fondo.png";
+import asiLoHacemos from "../assets/logos/Asi_lo_hacemos.png";
+import imgApolo from "../assets/logos/icons/Mask_group.png";
+import imgApoloBanner from "../assets/logos/icons/Logo_Apolo.png";
+import iconoApolo from "../assets/logos/icons/Frame.svg";
+import iconoApolo2 from "../assets/logos/icons/Frame-1.svg";
+import iconoApolo3 from "../assets/logos/icons/Frame-2.svg";
+import nuevaSolicitud from "../assets/logos/icons/Nueva_solicitud.svg"
+
 function PrincipalScreen() {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedSize, setSelectedSize] = useState(null);
@@ -26,6 +34,7 @@ function PrincipalScreen() {
     { label: "Extra large", value: "ELG" },
     { label: "Extra small", value: "ESM" },
   ];
+
   return (
     <div>
       <Header />
@@ -35,6 +44,14 @@ function PrincipalScreen() {
       >
         <Row className="px-5" style={{ height: "100%", width: "100%" }}>
           <Col>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+
             <Container>
               <h2>
                 La mejor solución para optimizar los procesos de compra de tu
@@ -55,18 +72,21 @@ function PrincipalScreen() {
           <Col></Col>
         </Row>
       </Container>
-      <Container fluid className="py-5">
+      <br></br>
+      <Container fluid>
         <Row>
           <Col>
             <Container>
-              <Row style={{alignItems:'center' , justifyContent:'center'}}>
-                <h4 className="w-80">Incremento de ahorros y beneficios en un 20% </h4>
+              <Row style={{ alignItems: "center", justifyContent: "center" }}>
+                <h4 className="w-80">
+                  Incremento de ahorros y beneficios en un 20%{" "}
+                </h4>
               </Row>
             </Container>
           </Col>
           <Col>
             <Container>
-              <Row style={{alignItems:'center', justifyContent:'center'}}>
+              <Row style={{ alignItems: "center", justifyContent: "center" }}>
                 <h4 className="w-80">
                   Optimización del 90% del tiempo de los procesos de tratamiento
                   de SOLPED
@@ -76,7 +96,7 @@ function PrincipalScreen() {
           </Col>
           <Col>
             <Container>
-              <Row style={{alignItems:'center', justifyContent:'center'}}>
+              <Row style={{ alignItems: "center", justifyContent: "center" }}>
                 <h4 className="w-80">
                   Mejoramiento de los índices de productividad de las
                   negociaciones
@@ -86,26 +106,59 @@ function PrincipalScreen() {
           </Col>
         </Row>
       </Container>
-      <Container fluid >
+      <br></br>
+      <br></br>
+
+      <Container fluid>
         <Row>
-          <Col xs={5} style={{backgroundImage: `url(${BGGrid})`, backgroundSize:"cover", backgroundPosition:"center" }}>
+          <Col
+            xs={5}
+            style={{
+              backgroundImage: `url(${BGGrid})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
             <Container className="h-100">
-                <Row className="h-100">
+              <Row className="h-100">
                 <Col>
-                <h2>Comprar con nosotros es comprar con confianza</h2>
-                <p>
-              Mediante el uso de nuestro aplicativo web, podrás tener la
-              información de toda tu área de abastecimiento en un mismo lugar.{" "}
-                </p></Col>
-                </Row>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br> <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <h2>Comprar con nosotros es comprar con confianza</h2>
+                  <p>
+                    Mediante el uso de nuestro aplicativo web, podrás tener la
+                    información de toda tu área de abastecimiento en un mismo
+                    lugar.{" "}
+                  </p>
+                </Col>
+              </Row>
             </Container>
           </Col>
           <Col xs={7}>
             <Container>
-              <Row style={{paddingBottom:"40px"}}>
-                <Col style={{paddingRight:"50px"}}>
-                  <div style={{backgroundImage:`url(${gridImg1})`, display:"flex", height:"180px",backgroundPosition:"center",backgroundSize:"contain",backgroundRepeat:"no-repeat",alignItems:"flex-end"}}>
-                    <h4 style={{margin:"0"}}>Optimiza</h4>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <Row style={{ paddingBottom: "40px" }}>
+                <Col style={{ paddingRight: "50px" }}>
+                  <div
+                    style={{
+                      backgroundImage: `url(${gridImg1})`,
+                      display: "flex",
+                      height: "180px",
+                      backgroundPosition: "center",
+                      backgroundSize: "contain",
+                      backgroundRepeat: "no-repeat",
+                      alignItems: "flex-end",
+                    }}
+                  >
+                    <h4 style={{ margin: "0" }}>Optimiza</h4>
                   </div>
                   <div>
                     <p>
@@ -117,9 +170,19 @@ function PrincipalScreen() {
                   </div>
                 </Col>
                 <Col>
-                  <divv style={{backgroundImage:`url(${gridImg3})`, display:"flex", height:"180px",backgroundPosition:"center",backgroundSize:"contain",backgroundRepeat:"no-repeat",alignItems:"flex-end"}}>
+                  <div
+                    style={{
+                      backgroundImage: `url(${gridImg3})`,
+                      display: "flex",
+                      height: "180px",
+                      backgroundPosition: "center",
+                      backgroundSize: "contain",
+                      backgroundRepeat: "no-repeat",
+                      alignItems: "flex-end",
+                    }}
+                  >
                     <h4>Compara</h4>
-                  </divv>
+                  </div>
                   <div>
                     <p>
                       Te brindamos información actualizada de los precios de
@@ -129,10 +192,20 @@ function PrincipalScreen() {
                   </div>
                 </Col>
               </Row>
-              <Row style={{paddingBottom:"40px"}}>
-                <Col style={{paddingRight:"50px"}}>
-                  <div style={{backgroundImage:`url(${gridImg4})`, display:"flex", height:"180px",backgroundPosition:"center",backgroundSize:"contain",backgroundRepeat:"no-repeat",alignItems:"flex-end"}}>
-                    <h4 >Agiliza</h4>
+              <Row style={{ paddingBottom: "40px" }}>
+                <Col style={{ paddingRight: "50px" }}>
+                  <div
+                    style={{
+                      backgroundImage: `url(${gridImg4})`,
+                      display: "flex",
+                      height: "180px",
+                      backgroundPosition: "center",
+                      backgroundSize: "contain",
+                      backgroundRepeat: "no-repeat",
+                      alignItems: "flex-end",
+                    }}
+                  >
+                    <h4>Agiliza</h4>
                   </div>
                   <div>
                     <p>
@@ -143,7 +216,17 @@ function PrincipalScreen() {
                   </div>
                 </Col>
                 <Col>
-                  <div style={{backgroundImage:`url(${gridImg2})`, display:"flex", height:"180px",backgroundPosition:"center",backgroundSize:"contain",backgroundRepeat:"no-repeat",alignItems:"flex-end"}}>
+                  <div
+                    style={{
+                      backgroundImage: `url(${gridImg2})`,
+                      display: "flex",
+                      height: "180px",
+                      backgroundPosition: "center",
+                      backgroundSize: "contain",
+                      backgroundRepeat: "no-repeat",
+                      alignItems: "flex-end",
+                    }}
+                  >
                     <h4>Ahorra</h4>
                   </div>
                   <div>
@@ -160,60 +243,112 @@ function PrincipalScreen() {
           </Col>
         </Row>
       </Container>
-      <Container>
-        <h4>Así lo hacemos</h4>
-        <Row>
-          <Col>
-            <h2>01</h2>
-            <h4>Análisis</h4>
-            <p>Revisamos el estado de trus procesos de abastecimiento </p>
-          </Col>
-          <Col>
-            <h2>03</h2>
-            <h4>Objetivos</h4>
-            <p>
-              Definimos las metas a alcanzar y las políticas de los procesos de
-              compra de tu empresa.
-            </p>
-          </Col>
-          <Col>
-            <h2>05</h2>
-            <h4>Evaluacion</h4>
-            <p>
-              Realizamos revisiones periódicas del proceso y generamos informes
-              detallando los ahorros generados.
-            </p>
-          </Col>
-        </Row>
-        <Row>
-          <Col></Col>
-        </Row>
-        <Row>
-          <Col>
-            <h2>02</h2>
-            <h4>Oportunidad de mejora</h4>
-            <p>
-              Identificamos las falencias en los procesos actualies con el fin
-              de optimizar los recursos.
-            </p>
-          </Col>
-          <Col>
-            <h2>04</h2>
-            <h4>Ejecución</h4>
-            <p>
-              Sistematizamos el proceso de abastecimiento para agilizar y
-              controlar la trazabilidad.
-            </p>
-          </Col>
+      <Container style={{  backgroundImage: `url(${fondo})`,
+                height: "800px",
+                width:"1600px",
+ }}>
+        <br></br>
+        <br></br>
+
+        <Row className="px-5" style={{ height: "100%", width: "100%" }}>
+          <h4 style={{ color: "white" }}>Así lo hacemos</h4>
+          <Row>
+            <Col>
+              <h2 style={{ color: "white" }}>01</h2>
+              <h4 style={{ color: "white" }}>Análisis</h4>
+              <p style={{ color: "white" }}>
+                Revisamos el estado de trus procesos de abastecimiento{" "}
+              </p>
+            </Col>
+            <Col>
+              <h2 style={{ color: "white" }}>03</h2>
+              <h4 style={{ color: "white" }}>Objetivos</h4>
+              <p style={{ color: "white" }}>
+                Definimos las metas a alcanzar y las políticas de los procesos
+                de compra de tu empresa.
+              </p>
+            </Col>
+            <Col>
+              <h2 style={{ color: "white" }}>05</h2>
+              <h4 style={{ color: "white" }}>Evaluacion</h4>
+              <p style={{ color: "white" }}>
+                Realizamos revisiones periódicas del proceso y generamos
+                informes detallando los ahorros generados.
+              </p>
+            </Col>
+          </Row>
+          <Row>
+            <div
+              style={{
+                height: "9vh",
+                backgroundImage: `url(${asiLoHacemos})`,
+                display: "flex",
+                height: "175px",
+                backgroundPosition: "center",
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+                alignItems: "flex-end",
+              }}
+            ></div>
+            <Col></Col>
+          </Row>
+          <Row>
+            <Col>
+              <h2 style={{ color: "white" }}>02</h2>
+              <h4 style={{ color: "white" }}>Oportunidad de mejora</h4>
+              <p style={{ color: "white" }}>
+                Identificamos las falencias en los procesos actualies con el fin
+                de optimizar los recursos.
+              </p>
+            </Col>
+            <Col>
+              <h2 style={{ color: "white" }}>04</h2>
+              <h4 style={{ color: "white" }}>Ejecución</h4>
+              <p style={{ color: "white" }}>
+                Sistematizamos el proceso de abastecimiento para agilizar y
+                controlar la trazabilidad.
+              </p>
+            </Col>
+          </Row>
+          <br></br>
         </Row>
       </Container>
       <Container>
+        <br></br>
+        <br></br>
+        <br></br>
         <Row>
-          <Col></Col>
+          <div
+            style={{
+              height: "100vh",
+              backgroundImage: `url(${imgApolo})`,
+              display: "flex",
+              height: "450px",
+              width: "450px",
+              backgroundPosition: "center",
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+              alignItems: "flex-end",
+            }}
+          ></div>
           <Col>
             <Row>
               <Col>
-                <h3>Obtén datos relevantes sobre tus habitos de compra </h3>
+                <br></br>
+                <div
+                  style={{
+                    height: "90vh",
+                    backgroundImage: `url(${imgApoloBanner})`,
+                    display: "flex",
+                    height: "80px",
+                    width: "400px",
+                    backgroundPosition: "center",
+                    backgroundSize: "contain",
+                    backgroundRepeat: "no-repeat",
+                    alignItems: "flex-end",
+                  }}
+                ></div>
+                <h5>Obtén datos relevantes sobre tus habitos de compra </h5>
                 <p>
                   Gracias a la sistematización del proceso de compra, podrás
                   tener a la mano los datos de tu empresa y de manera digital.
@@ -222,37 +357,84 @@ function PrincipalScreen() {
                 </p>
               </Col>
             </Row>
-            <Container>
+            <br>
+            </br>
+             <Container>
               <Row>
-                <Col></Col>
-                <Col>
+                <Col style={{display:"flex"}}>
+                  <div
+                    style={{
+                      height: "90vh",
+                      backgroundImage: `url(${iconoApolo3})`,
+                      display: "flex",
+                      height: "40px",
+                      width: "40px",
+                      backgroundPosition: "center",
+                      backgroundSize: "contain",
+                      backgroundRepeat: "no-repeat",
+                      alignItems: "flex-end",
+                    }}
+                  ></div>
+               
                   <p>Obtén un comparativo mes a mes de tus gastos</p>
                 </Col>
               </Row>
+              <br></br>
               <Row>
-                <Col></Col>
-                <Col>
+              <Col style={{display:"flex"}}>
+                  <div
+                    style={{
+                      height: "90vh",
+                      backgroundImage: `url(${iconoApolo2})`,
+                      display: "flex",
+                      height: "40px",
+                      width: "40px",
+                      backgroundPosition: "center",
+                      backgroundSize: "contain",
+                      backgroundRepeat: "no-repeat",
+                      alignItems: "flex-end",
+                    }}
+                  ></div>
+                
                   <p>
                     Ten un control de gastos comparando tu presupuesto vs tus
                     gastos reales
                   </p>
                 </Col>
               </Row>
+              <br></br>
               <Row>
-                <Col></Col>
-                <Col>
-                  <p>
+              <Col style={{display:"flex"}} className="me-2 ">
+                  <div
+                    style={{
+                      height: "90vh",
+                      backgroundImage: `url(${iconoApolo})`,
+                      display: "flex",
+                      height: "40px",
+                      width: "40px",
+                      backgroundPosition: "center",
+                      backgroundSize: "contain",
+                      backgroundRepeat: "no-repeat",
+                      alignItems: "flex-end",
+                    }}
+                  ></div>
+                
+                  <p className="ms-2">
                     Aprovecha nuestros indicadores de gestión para la planeación
                     de tus operaciones
                   </p>
                 </Col>
               </Row>
-            </Container>
+            </Container> 
           </Col>
         </Row>
       </Container>
+      <br></br>
+      <br></br>
       <Container>
         <Row>
+          <br></br>
+          <br></br>
           <Col>
             <h2>¿Quieres saber cómo podemos ayudarte a cumplir tus metas?</h2>
           </Col>
@@ -274,26 +456,26 @@ function PrincipalScreen() {
                         <div className="multisteps-form__content">
                           <div className="row mt-3">
                             <div className="col-12 col-sm-6">
-                              <div className="input-group input-group-dynamic">
+                              <div className="input-group input-group-dynamic border rounded-pill px-3 border-terciary">
                                 <label
                                   htmlFor="exampleFormControlInput1"
                                   className="form-label"
                                 >
-                                  First name
+                                  Nombre
                                 </label>
                                 <input
-                                  className="multisteps-form__input form-control"
+                                  className="multisteps-form__input form-control rounded-pill px-3"
                                   type="text"
                                 />
                               </div>
                             </div>
                             <div className="col-12 col-sm-6 mt-3 mt-sm-0">
-                              <div className="input-group input-group-dynamic">
+                              <div className="input-group input-group-dynamic border rounded-pill px-3 border-terciary"> 
                                 <label
                                   htmlFor="exampleFormControlInput1"
                                   className="form-label"
                                 >
-                                  Last name
+                                  Apellido
                                 </label>
                                 <input
                                   className="multisteps-form__input form-control"
@@ -304,12 +486,12 @@ function PrincipalScreen() {
                           </div>
                           <div className="row mt-3">
                             <div className="col-12">
-                              <div className="input-group input-group-dynamic">
+                              <div className="input-group input-group-dynamic border rounded-pill px-3 border-terciary">
                                 <label
                                   htmlFor="exampleFormControlInput1"
                                   className="form-label"
                                 >
-                                  Email address
+                                  Correo electronico
                                 </label>
                                 <input
                                   className="multisteps-form__input form-control"
@@ -320,7 +502,7 @@ function PrincipalScreen() {
                           </div>
                           <div className="row mt-3">
                             <div className="col-12">
-                              <div className="input-group input-group-dynamic">
+                              <div className="input-group input-group-dynamic border rounded-pill px-3 border-terciary">
                                 <label
                                   htmlFor="exampleFormControlInput1"
                                   className="form-label"
