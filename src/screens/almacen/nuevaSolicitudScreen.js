@@ -9,7 +9,7 @@ import buscar from "../../assets/logos/icons/buscar.svg";
 import ayqlogo from "../../assets/logos/icons/A&Q_Logo.svg";
 import Subtitle from "../../components/Subtitle";
 
-const nuevaSolicitudScreen = () => {
+const NuevaSolicitudScreen = () => {
   //const [value, setValue] = useState("");
 
   const options = [
@@ -235,4 +235,4 @@ const nuevaSolicitudScreen = () => {
     // </div>
   );
 };
-export default nuevaSolicitudScreen;
+export default NuevaSolicitudScreen;
