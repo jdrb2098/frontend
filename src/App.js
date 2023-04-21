@@ -25,7 +25,6 @@ function App() {
   
   return (
     <Routes>
-      <Route>
         <Route path="/dashboard" element={<HomeScreen />}>
 
           <Route index element={<PrincipalScreen />} />
@@ -49,7 +48,6 @@ function App() {
         </Route>
         <Route path="/home" element={<PrincipalScreen/>}/>
         <Route path="/*" element={<Navigate to="/dashboard" />} />
-      </Route>
 
       <Route element={<ProtectedRoutes negate={true} redirectTo={"/dashboard"} />}>
         <Route path="/login" element={<LoginScreen />} />
@@ -59,3 +57,4 @@ function App() {
 }
 
 export default App;
+
