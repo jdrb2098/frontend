@@ -25,7 +25,7 @@ function App() {
   
   return (
     <Routes>
-      <Route element={<ProtectedRoutes redirectTo={"/login"}/>}>
+      <Route>
         <Route path="/dashboard" element={<HomeScreen />}>
 
           <Route index element={<PrincipalScreen />} />
